@@ -1,5 +1,5 @@
 {
-  "name": "fullstack",
+  "name": "fullstackGithub",
   "version": "1.0.0",
   "description": "",
   "main": "creatCollec.js",
@@ -16,10 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/Batchyomna/groupFullStack.git"
   },
-  "author": "",
+  "author": "Yomna BATCH",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Batchyomna/groupFullStack/issues"
+    "url": "https://github.com/Batchyomna/fullStackGithub/issues"
   },
-  "homepage": "https://github.com/Batchyomna/groupFullStack#readme"
+  "homepage": "https://github.com/Batchyomna/fullStackGithub#readme"
 }
