@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>The Students</title>
+
+</head>
+
+<body>
+    <nav>
+        <h1><a href="./">Group Generator</a></h1>
+        <ul id="menu">
+            <li>
+                <a href="./students">Students</a>
+            </li>
+            <li>
+                <a href="./groups">Groups</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="listOfStudents" >
+
+        <h1>List of Students</h1>
+
+        <form action="/students" method="POST" class="">
+            <input type="text" name="student" placeholder="Student's name" class="">
+            <button type="submit" class="" >Add</button>
+            <ul style="list-style: none;">
+                <% for(let j=0; j< students.length ; j++) {%>
+                <li id="studentName"> <%= students[j].name %> </li>
+                <% } %>
+            </ul>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>The Groups</title>
+</head>
+
+<body>
+    <nav>
+        <h1><a href="./">Group Generator</a></h1>
+        <ul id="menu">
+            <li>
+                <a href="./students">Students</a>
+            </li>
+            <li>
+                <a href="./groups">Groups</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="listOfGroups">
+        <h1>List of Groups</h1>
+
+        <form action="/groups" method="POST" class="">
+
+            <input type="text" name="project" placeholder="Project's name" class="">
+            <input type="text" name="number" placeholder="Number of students" class="">
+
+            <button type="submit" class="" >Generate</button>
+            <div id="group">
+                <% for (var i=0; i< groups.length; i++) {%>
+                <div class="newgroup">
+                    <h3><%= groups[i].name %> (<%= groups[i].num %>)</h3>
+                    
+                        <% for (var x=0; x< groups[i].studentsNames.length; x++) {%>
+                    <p>
+                        <%= groups[i].studentsNames[x] %>
+                    </p>
+                    <% } %>
+                </div>
+
+                <% } %>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
